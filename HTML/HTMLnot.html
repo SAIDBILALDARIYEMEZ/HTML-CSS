@@ -1,0 +1,396 @@
+<!-- yapı bu şekilde -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8"> <!-- türkçe karakter özelliği-->
+    <title>Sayfa Başlığı</title> <!-- sekme üstündeki başlık -->
+</head>
+<body>
+
+<!-- başlıklar -->
+<h1>yazınım başlığını en büyük ayarlar</h1>
+<h2>yazınım başlığını ayarlar</h2>
+<h3>yazınım başlığını ayarlar</h3>
+<h4>yazınım başlığını ayarlar</h4>
+<h5>yazınım başlığını ayarlar</h5>
+<h6>yazınım başlığını en küçük  ayarlar</h6>
+<br>
+
+<!--p etiketi-->
+<p>paragraf etiketi.</p>
+<br>
+
+<!--br etiketi-->
+<p>
+    satır <br>
+    atladı
+
+</p>
+<br>
+
+<!--hr etiketi-->
+<p>
+    çizgi
+<hr>
+ÇEKTİ
+</p>
+
+<br>
+
+<!-- div alan belirtir. genelde css için kullanılır. -->
+<div>
+    <h3>Başlık</h3>
+    <p> bu bir paraftır. </p>
+</div>
+<br>
+
+<!--span div'in satır içi halidir -->
+<span>saır içi hali</span>
+<br>
+
+<!--b, strong-->
+<b>kalın</b>
+<strong>vurguku kaıln</strong>
+<br>
+<!-- i, em-->
+<i>Eğik Yazı</i>
+<em>vurgulu italik yazı</em>
+<br>
+<!-- small-->
+Bu yazılar normalken <small>bu yazı daha küçük</small> gözüküyor olabilir mi?
+<br>
+<!-- mark -->
+yazının bu kısmı <mark>sarı şekilde</mark> gözüksün.
+<br>
+<!--del-->
+<del>üstünü çizer</del>
+<br>
+<!--<del> ile silinen yazıların yenisini eklerken <ins> etiketi kullanılır. altını çizer ins-->
+Boyum şuan <del>180cm</del> <ins>195cm</ins>
+<br>
+<!--yazıyı alta verir-->
+H<sub>2</sub>O
+<br>
+<!--yazıyı üste verir-->
+m<sup>2</sup>
+<br>
+<!--s-->
+<s>yazının üstünü çizer</s>
+<br>
+<!--u-->
+<u>altını çizer</u>
+<br>
+<!-- abbr etiketi  kısaltmanın altını kesikli olarak çizer ve kısaltmanın üstüne gelince uzun halini gösterir-->
+<p>
+    <abbr title="Hyper Text Markup Language">HTML</abbr> bir işaretleme dilidir.
+</p>
+<br>
+<!--q alıntı yapılınca gelir. etiket arasındaki yazı tırnak işareti arasına gelir-->
+<p>
+    Bediüzzaman der ki; <q>Zalimler için yaşasın cehennem.</q>
+</p>
+<br>
+<!--clockquote büyük alınttıladakullanılır. sağ sol ve altlardan boşluk bıraktırır.-->
+<p>Wikipedia'ya göre HTML'in tanımı;</p>
+
+<blockquote>
+    Hiper Metin İşaretleme Dili web sayfalarını oluşturmak için kullanılan standart metin işaretleme dilidir.
+    Dilin son sürümü HTML5'tir. HTML, bir programlama dili olarak tanımlanamaz. Zira HTML kodlarıyla kendi başına
+    çalışan bir program yazılamaz.
+</blockquote>
+<br>
+<!--cite cümledeki alıntılanan kelimeyi vurgular.-->
+prototurk.com <cite>Tayfun Erbilen</cite> tarafından 07 mayıs 2019'da yeniden kuruldu.
+<br>
+<!--a etiketi link vermemizi sağlar, href ise yolu verir. -->
+<a href="https://google.com/tr">Google'a git</a>
+<br>
+<!--target nerde sayfayı nerde açacağını belirtir. _blank yan sekmede, _self o  sekmede açar.-->
+<a href="https://prototurk.com" target="_blank">Prototürk</a>
+<br>
+<!--resimlere bağlantı verir.-->
+<a href="https://prototurk.com">
+    <img src="resim.png" alt="123">
+</a>
+<br>
+<!--float ile sayafa kayarken resimler belirlenen konumda kalır.-->
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+    The image will float to the right of the text.</p>
+
+<p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+    The image will float to the left of the text.</p>
+<br>
+<!--# id belirtir, idler uyuşusa yazıya dokununca id'ye sahip o bölüme gider.-->
+<p>
+    <a href="#bolum1">1. Bölüme Git</a> <br>
+    <a href="#bolum2">2. Bölüme Git</a>
+</p>
+
+<div id="bolum1">
+    <p>
+        <strong>1. Bölüm</strong>
+    </p>
+    <p>
+        Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir
+        matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri
+        endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış,
+        aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren
+        Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren
+        masaüstü yayıncılık yazılımları ile popüler olmuştur.
+    </p>
+</div>
+
+<div id="bolum2">
+    <p>
+        <strong>2. Bölüm</strong>
+    </p>
+    <p>
+        Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir
+        matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri
+        endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış,
+        aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren
+        Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren
+        masaüstü yayıncılık yazılımları ile popüler olmuştur.
+    </p>
+</div>
+<br>
+<!--img src'de resmin linki verilir ve resim gözükür.-->
+<img src="https://picsum.photos/id/434/200/300">
+<br>
+<!--resim gözükmezse alt etiketi çalışıp gözükmeyen resim yerine gelir. -->
+<img src="upload/cicek.png" alt="Kırmızı Gül Çiçeği">
+<br>
+<!--width: genişlik, height yükseklik verir.-->
+<img src="https://picsum.photos/id/848/200/300" alt="lorem" width="200" height="100">
+<br>
+<!--bilgisayardan foto eklenmesi için bu tarz bi dizin veriririz-->
+<img src="../img/test.png" alt="Test">
+<br>
+<!--resmin içinde bağlantı adresi olması için href kullanıerız. -->
+<a href="https://prototurk.com">
+    <img src="img/logo.png" alt="Prototürk">
+</a>
+<br>
+<!--map fotoğrafta verilen kordinatlara göre farklı linkleri koyar. -->
+<img src="https://prototurk.com/upload/img/cihaz.jpg" alt="Cihazlar" usemap="#ptmap">
+
+<map name="ptmap">
+    <area shape="rect" coords="105,249,161,366" href="mobil.html" alt="Telefon">
+    <area shape="rect" coords="238,172,386,366" href="tablet.html" alt="Tablet">
+    <area shape="rect" coords="444,95,834,408" href="bilgisayar.html" alt="Bilgisayar">
+</map>
+<br>
+<!--srcset ekranın çözünürlüğüne göre kalite değiştirir.-->
+<img src="https://data.mediamarkt.com.tr/img/2022/10/satin_alma/foto5.jpg"
+     srcset="https://data.mediamarkt.com.tr/img/2022/10/satin_alma/foto5.jpg1x",
+     srcset="https://data.mediamarkt.com.tr/img/2022/10/satin_alma/foto5.jpg2x">
+
+<!--tablo elemanları table ile yapılır. satırlar için tr, sütunlar için td kullanılır. tbody ise tablonun
+içeriğini belirtir.-->
+<table border="1">
+    <tbody>
+    <tr>
+        <td>Tayfun Erbilen</td>
+        <td>26</td>
+    </tr>
+    <tr>
+        <td>Ahmet Aslan</td>
+        <td>22</td>
+    </tr>
+    </tbody>
+</table>
+<br>
+<!--thead başlıktır. kalın yazar. tbody rablo içeriğidir normal yazar. tfoot alt bilgidir. -->
+<table border="1">
+    <thead>
+    <tr>
+        <th>Ad-soyad</th>
+        <th>Yaş</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Ocak</td>
+        <td>100₺</td>
+    </tr>
+    <tr>
+        <td>Şubat</td>
+        <td>200₺</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td>Toplam</td>
+        <td>300₺</td>
+    </tr>
+    </tfoot>
+</table>
+<br>
+<!--sütunları birleştirmek için colspan, satırları birleştirmek için rowspan, caption ise tabloda yer
+almayan tablo başlığıdır.-->
+<table border="1">
+    <caption>üst başlık</caption>
+    <thead>
+    <tr>
+        <th>Yıl</th>
+        <th>İsim</th>
+        <th>Meslek</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="2">2019</td>
+        <td>Tayfun Erbilen</td>
+        <td>Web Developer</td>
+    </tr>
+    <tr>
+        <td colspan="2">Mehmet Seven - Web Developer</td>
+    </tr>
+    </tbody>
+</table>
+<br>
+<!--sıraız liste için ul -->
+<ul>
+    <li>Çay</li>
+    <li>Şeker</li>
+    <li>Kaşık</li>
+</ul>
+<br>
+<!--ul listesini type ile özelleştirilir. circle - içi boş daire, disc - içi dolu daire, square - içi dolu kare -->
+<ul type="square">
+    <li>Çay</li>
+    <li>Şeker</li>
+    <li>Kaşık</li>
+</ul>
+<br>
+<!--sıral ılistelerde kullanılır. start vererek başlangıç değeri verilir. type ile özelleştirilebilirler:
+1 - 1'den başlayan sayılı
+a - Küçük harfle a'dan başlayan sayılı
+A - Büyük harfle A'dan başlayan sayılı
+i - Küçük harflerle başlayan romen rakamı sayılı
+I - Büyük harflerle başlayan romen rakamı sayılı-->
+<ol type="A", start="3">
+    <li>HTML Nedir?</li>
+    <li>HTML'e Başlangıç</li>
+    <li>HTML'de Etiketler</li>
+</ol>
+
+<!--dl açıklamalı liste kullanımını sağlar. dt açıklanan yeri, dd açıklamayı verir ve bir
+paragraf boşluğuna göre başlar.-->
+<dl>
+    <dt>Mustafa Kemal Atatürk</dt>
+    <dd>Türkiye Cumhuriyeti'nin kurucusu.</dd>
+    <dt>Einstein</dt>
+    <dd>Nobel Fizik Ödüllü Yahudi asıllı Alman teorik fizikçi</dd>
+</dl>
+<br>
+<!--video etiketi video eeklememizi sağlar. source ise video kaynaklarını belirler. conrols ise video
+üstünde kontrolleri yapmamızı sağlar. (durdurma ileri sarma vs). poster başlangıçta resim koymayı sağlar.
+track altyazı eklememizi sağlar. kind yazı türünü belirtir:
+
+captions	Parça, diyalog ve ses efektlerinin çevirisi için kullanılır (duyma engelli kişiler için uygundur)
+chapters	Video bölüm başlıkları için kullanılır
+descriptions	Video içeriğini anlatan dosyalar için kullanılır (duyma engelli kişiler için uygundur)
+subtitles	Altyazıları tanımlamak için kullanılır-->
+<video width="320" height="240" loop poster="png.png" controls>
+    <source src="test.mp4" type="video/mp4">
+    <source src="test.ogg" type="video/ogg">
+    <track src="altyazi_tr.vtt" kind="subtitles" srclang="tr" label="Türkçe">
+    <track src="altyazi_en.vtt" kind="subtitles" srclang="en" label="English">
+    Tarayıcınız HTML5 video özelliğini desteklemiyor.
+</video>
+<br>
+<!--audio ses eklemek için kulanılır. autoplay tekrar oynatmayı sağlar. muted ses işlemlerini sağlar. -->
+<audio controls autoplay muted>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<br>
+<!--iframe etiketi web sayfalarında başka web sayfalarını gömüp göstermek için kullanılırlar. frameborder kenarları
+kaldırır. scrolling içeriğin kaymasını engeller.-->
+<iframe src="https://prototurk.com" frameborder="0" scrolling="no" ></iframe>
+<br>
+<!--a ile belirledğimiz linki targetle isim belirliyoruz. daha sonra iframe içinde name
+etiketi ile o linki çağırıyoruz. -->
+<a href="https://prototurk.com" target="frame_adi">Prototürk'ü aç</a>
+
+<iframe name="frame_adi"></iframe>
+<br>
+<!--youtube videosunu paylaş kısmından buraya ekleyebiliriz. -->
+<iframe src=width="560" height="315" src="https://www.youtube.com/embed/TPtSH1XOWYM?si=vDyQE63VTHBz9aLU" ></iframe>
+<br>
+<!--sandbox ile sayfada gösterilme izni olup olmayan şeyler belirlenir. sandbox tek olarak hiç bir eye izin vermez
+ama allow ile yeni şeyler ekletir. -->
+<iframe src="https://prototurk.com"sandbox="allow-scripts allow-forms"></iframe>
+<br>
+<!--form etiketleri form uygulamalarını sağlar. action formların nereye gönderileceğini belirtir. boş ise aynı
+sayfaya gönderilir. method ise hangi metod uygulanacağını belirtir.
+type hangi değeri kullanacağımızı belirtir. -->
+<form action="" method="get">
+    <fieldset> <!--çerçeve eklenir-->
+    <legend>giriş yap</legend> <!--legend ile çerçeve başlığı eklenir.-->
+        <input maxlength="6" type="text" placeholder="Kullanıcı adınız"> <!--text yazı yazmamızı sağlar, placholder
+        ise yazmadan önce gözüken yazıdır. yazmaya başlayınca yazı gider. maxlength karakter sınırlamamsı getirir.-->
+        <input required type="password"> <!--şifre girdirir.requied boş ise göndermez-->
+        <input type="file" multiple accept="image/*"> <!--dosya eklememizi sağlar. multiple 1den fazla dosya
+        seçmemzi sağlar. accept seçilecek olanı belirler ve * ise türünü farketmez der. -->
+        <input type="button" value="Giriş yap"> <!--buton buton ekletir, value ise buton üstündeki yazıdır.-->
+        <input type="submit" value="Gönder"><!--submit formu göndertir-->
+        <input type="reset" value="Sıfırla"> <!--sıfırlar-->
+    </fieldset>
+    <br>
+    <!--işaretlemeyi sağlar. label içinde olduğundan yazıya tıklarsakta işaretler.-->
+    <label>
+        <input type="checkbox" name="hobi[]" value="Bisiklet"> Bisiklet
+    </label>
+    <br>
+    <!--seçim işlemlerind kullanılır. cinsiyet seçimi gibi-->
+    <label>
+        <input type="radio" name="cinsiyet" value="1"> Erkek
+    </label>
+    <label>
+        <input type="radio" name="cinsiyet" value="2"> Kadın
+    </label>
+    <br>
+    <!--renk seçimlerinde kullanılır.-->
+    <input type="color" placeholder="Rengi seçin">
+    <br>
+    <!--tarih seçer-->
+    <input type="date" placeholder="Tarihi seçin">
+    <br>
+    <!--saat seçer-->
+    <input type="time" placeholder="Saati seçin">
+    <br>
+    <!--hem saat hem tarih seçer-->
+    <input type="datetime-local">
+    <br>
+    <!--e posta ekletir-->
+    <input type="email" placeholder="E-posta adresiniz..">
+    <br>
+    <!--hafta seçtirir-->
+    <input type="week" placeholder="Haftayı seçin">
+    <br>
+    <!--sayı seçer-->
+    <input type="number" value="5">
+    <br>
+    <!--alta doğru seçenekleri sıralr. -->
+    <input list="diller">
+    <datalist id="diller">
+        <option value="html">
+        <option value="css">
+        <option value="javascript">
+    </datalist>
+    <br>
+    <!--blog yazıları gibi kısımlar için kullanılır. cols genişlik, rows yükseklik ayarlar.-->
+    <textarea name="hakkinda" cols="30" rows="10"></textarea>
+    <br>
+    <!--select liste ile bilgi almamızı sağlar. multiple ise birden fazla seçenek sağlar. -->
+    <select name="cinsiyet[]" multiple>
+        <option value="">Cinsiyetinizi Seçin</option>
+        <option value="1">Erkek</option>
+        <option value="2">Kadın</option>
+    </select>
+</form>
+</body>
+</html>
